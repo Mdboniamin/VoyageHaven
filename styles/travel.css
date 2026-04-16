@@ -3,18 +3,27 @@
 * {
     font-family: "Mulish", sans-serif;
 }
+
 /* shared styles */
-.section-title{
+.section-title {
     font-size: 40px;
     font-weight: 800;
     margin: 0;
     margin-bottom: 24px;
 }
-.section-des{
+
+.section-des {
     font-size: 16px;
     color: #5a5a5d;
 }
-.btn-primary{
+
+.sec-center {
+    text-align: center;
+    max-width: 643px;
+    margin: 0 auto;
+}
+
+.btn-primary {
     font-size: 20px;
     font-weight: 800;
     background-color: #ff5400;
@@ -23,6 +32,7 @@
     padding: 13px 34px;
     border: none;
 }
+
 /* body styles */
 body {
     margin: 50px 130px;
@@ -109,14 +119,147 @@ body {
     background-color: #ff5400;
     color: white;
 }
+
 /* popular section styles */
-.popular{
+.popular {
     display: flex;
     margin-top: 100px;
     gap: 50px;
 }
-.popular button{
+
+.popular button {
     margin-top: 32px;
+}
+
+/* destination section styles */
+/* .destination{
+    margin-top: 60px;
+}
+.maldives{
+    grid-area: maldives;
+}
+.indonesia{
+    grid-area: indonesia;
+}
+.srilanka{
+    grid-area: srilanka;
+}
+.namerica{
+    grid-area: namerica;
+}
+.kashmir{
+    grid-area: kashmir;
+}
+.bangladesh{
+    grid-area: bangladesh;
+}
+.bandarban{
+    grid-area: bandarban;
+}
+.destination .img-container img{
+    width: 100%;
+    height: 100%;
+}
+.destination .img-container{
+    display: grid;
+    grid-template-areas: 
+    "maldives  maldives  maldives  indonesia  indonesia  indonesia"
+    "srilanka  srilanka  namerica  namerica   namerica   kashmir  "
+    "bangladesh bangladesh bandarban bandarban bandarban bandarban"
+    ;
+    gap:24px; 
+} */
+.destination {
+    margin-top: 60px;
+}
+
+.destination .first,
+.second,
+.third {
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.first .fr,
+.third .tr {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.first .fr {
+    width: 573px;
+}
+
+.destination .second .se {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 286px;
+}
+
+.destination .first {
+    display: flex;
+    gap: 24px;
+}
+
+.destination .second {
+    display: grid;
+    grid-template-columns: 374px 474px 274px;
+    gap: 24px;
+}
+
+.destination .third {
+    display: grid;
+    grid-template-columns: 473px 673px;
+    gap: 24px;
+}
+
+
+.maldives {
+    background-image: url(../Images/maldives.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center;
+}
+
+.indonesia {
+    background-image: url(../Images/indonesia.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.srilanka {
+    background-image: url(../Images/srilanka.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.namerica {
+    background-image: url(../Images/north-america.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.kashmir {
+    background-image: url(../Images/kashmir.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bangladesh {
+    background-image: url(../Images/bangladesh.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bandarban {
+    background-image: url(../Images/bandarban.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* responsive mobile */
@@ -145,26 +288,31 @@ body {
         flex-direction: column;
     }
 
-    .banner .find input{
+    .banner .find input {
         width: 245px;
     }
+
     .banner .find button,
-    .banner .find select{
+    .banner .find select {
         width: 277px;
     }
-    .banner .description{
+
+    .banner .description {
         margin-top: 8px;
         margin-bottom: 32px;
     }
-    .popular{
+
+    .popular {
         flex-direction: column;
         margin-top: 24px;
         gap: 24px;
     }
-    .popular button{
+
+    .popular button {
         margin: 0;
     }
-    .popular img{
+
+    .popular img {
         width: 100%;
     }
 }
