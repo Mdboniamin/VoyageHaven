@@ -3,40 +3,105 @@
 * {
     font-family: "Mulish", sans-serif;
 }
-body{
+
+body {
     margin: 50px 130px;
 }
-.nav{
+
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.nav .menu{
+
+.nav .menu {
     display: none;
 }
+
 .nav .name {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
-.nav .link{
+
+.nav .link {
     display: flex;
     gap: 44px;
 }
-.nav a{
+
+.nav a {
     text-decoration: none;
     color: black;
     cursor: pointer;
 }
+
+/* banner styles */
+.banner {
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.8) 0%, rgba(19, 19, 24, 0) 100%), url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+    border-radius: 16px;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 185px;
+    text-align: center;
+}
+
+.banner .title {
+    font-size: 64px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.banner .description {
+    font-size: 16;
+    max-width: 676px;
+    margin-bottom: 48px;
+}
+
+.banner .find {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+}
+
+.banner .find input, 
+.banner .find button,
+.banner .find select{
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    width: 142px;
+    color: rgba(19, 19, 24, 0.5);
+}
+.banner .find button{
+    background-color: #ff5400;
+    color: white;
+}
+
+
+
 /* responsive mobile */
 @media screen and (max-width:576px) {
-    body{
+    body {
         margin: 20px;
     }
-    .nav .link{
+
+    .nav .link {
         display: none;
     }
-    .nav .menu{
+
+    .nav .menu {
         display: block;
     }
 }
