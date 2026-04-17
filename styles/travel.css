@@ -132,43 +132,6 @@ body {
 }
 
 /* destination section styles */
-/* .destination{
-    margin-top: 60px;
-}
-.maldives{
-    grid-area: maldives;
-}
-.indonesia{
-    grid-area: indonesia;
-}
-.srilanka{
-    grid-area: srilanka;
-}
-.namerica{
-    grid-area: namerica;
-}
-.kashmir{
-    grid-area: kashmir;
-}
-.bangladesh{
-    grid-area: bangladesh;
-}
-.bandarban{
-    grid-area: bandarban;
-}
-.destination .img-container img{
-    width: 100%;
-    height: 100%;
-}
-.destination .img-container{
-    display: grid;
-    grid-template-areas: 
-    "maldives  maldives  maldives  indonesia  indonesia  indonesia"
-    "srilanka  srilanka  namerica  namerica   namerica   kashmir  "
-    "bangladesh bangladesh bandarban bandarban bandarban bandarban"
-    ;
-    gap:24px; 
-} */
 .destination {
     margin-top: 60px;
 }
@@ -210,6 +173,7 @@ body {
     display: grid;
     grid-template-columns: 374px 474px 274px;
     gap: 24px;
+    margin: 24px 0px;
 }
 
 .destination .third {
@@ -218,6 +182,9 @@ body {
     gap: 24px;
 }
 
+.destination h3 {
+    margin: 0;
+}
 
 .maldives {
     background-image: url(../Images/maldives.png);
@@ -263,7 +230,7 @@ body {
 }
 
 /* responsive mobile */
-@media screen and (max-width:576px) {
+@media screen and (max-width:600px) {
     body {
         margin: 20px;
     }
@@ -314,5 +281,51 @@ body {
 
     .popular img {
         width: 100%;
+    }
+
+    .section-title {
+        font-size: 20px;
+        margin: 0 auto;
+    }
+
+    .first .fr,
+    .third .tr {
+        height: 220px;
+        border-radius: 16px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .second .se {
+        height: 220px;
+        width: 100%;
+        border-radius: 16px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .destination .second .se {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .destination .first {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .destination .second {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        border-radius: 16px;
+    }
+
+    .destination .third {
+
+        grid-template-columns: 1fr;
+        gap: 16px;
     }
 }
