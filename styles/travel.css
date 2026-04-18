@@ -273,21 +273,20 @@ body {
 }
 
 .why .center .center-content {
-    background: rgba(233, 68, 68, 0.05);
+    background: rgba(233, 68, 68, 0.07);
     border: 1px solid rgba(233, 68, 68, 0.2);
     border-radius: 16px;
     padding: 32px;
 }
 
 .why .hotel {
-    background: rgba(251, 181, 99, 0.05);
+    background: rgba(251, 181, 99, 0.07);
     border: 1px solid rgba(251, 181, 99, 0.2);
     border-radius: 16px;
 }
 
 .why .service {
-
-    background: rgba(41, 206, 246, 0.05);
+    background: rgba(41, 206, 246, 0.07);
     border: 1px solid rgba(41, 206, 246, 0.2);
     border-radius: 16px;
 }
@@ -342,11 +341,13 @@ body {
     text-align: center;
     width: 300px;
 }
-.badge .text{
+
+.badge .text {
     font-size: 24px;
     margin: 0;
 }
-.badge .save{
+
+.badge .save {
     font-size: 32px;
     font-weight: 800;
     margin: 0;
@@ -462,5 +463,31 @@ body {
 
     .why .why-title-des {
         margin-bottom: 0;
+    }
+
+    .why h5 {
+        font-size: 20px;
+    }
+
+    .newsletter {
+        flex-direction: column;
+    }
+
+    .newsletter .img-container img {
+        width: 100%;
+    }
+
+    .newsletter .badge .text {
+        font-size: 16px;
+    }
+
+    .newsletter .badge .save {
+        font-size: 22px;
+    }
+
+    .newsletter .badge {
+        top: -165px;
+        translate: 165px;
+        width: 180px;
     }
 }
