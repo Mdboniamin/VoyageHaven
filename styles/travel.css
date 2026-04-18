@@ -234,38 +234,45 @@ body {
 }
 
 /* why section styles */
-.why{
+.why {
     margin-top: 80px;
 }
-.why h5{
+
+.why h5 {
     font-size: 24px;
     font-weight: 800;
 }
-.why .hotel-service-container{
+
+.why .hotel-service-container {
     display: flex;
     gap: 24px;
     margin-bottom: 24px;
 }
-.why .section-des{
+
+.why .section-des {
     max-width: 486px;
 }
-.why .why-title-des{
+
+.why .why-title-des {
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
+
 .why .service,
-.why .hotel{
+.why .hotel {
     padding: 32px;
 }
+
 .why .center {
-    
+
     display: flex;
     justify-content: center;
 }
-.why .center .center-content{
+
+.why .center .center-content {
     background: rgba(233, 68, 68, 0.05);
     border: 1px solid rgba(233, 68, 68, 0.2);
     border-radius: 16px;
@@ -285,6 +292,65 @@ body {
     border-radius: 16px;
 }
 
+/* newsletter section styles */
+.newsletter {
+    margin-top: 100px;
+    display: flex;
+    gap: 24px;
+    max-height: 422px;
+}
+
+.newsletter .content {
+    border: 1px solid #FF5400;
+    border-radius: 16px;
+    padding: 40px;
+}
+
+.newsletter .title {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.newsletter hr {
+    border: 1px solid rgba(19, 19, 24, 0.1);
+    margin-bottom: 24px;
+}
+
+.newsletter input {
+    background: rgba(19, 19, 24, 0.1);
+    border-radius: 8px;
+    padding: 16px;
+    width: 90%;
+    border: none;
+    margin-bottom: 16px;
+}
+
+.newsletter .btn-primary {
+    width: 100%;
+}
+
+.newsletter .badge {
+
+    background: #FF5400;
+    border-radius: 16px;
+    transform: rotate(-19.63deg);
+    position: relative;
+    top: -205px;
+    translate: 270px;
+    color: white;
+    padding: 35px 45px;
+    text-align: center;
+    width: 300px;
+}
+.badge .text{
+    font-size: 24px;
+    margin: 0;
+}
+.badge .save{
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0;
+}
 
 /* responsive mobile */
 @media screen and (max-width:600px) {
@@ -385,13 +451,16 @@ body {
         grid-template-columns: 1fr;
         gap: 16px;
     }
-    .why .hotel-service-container{
+
+    .why .hotel-service-container {
         flex-direction: column;
     }
-    .why{
+
+    .why {
         margin-top: 20px;
     }
-    .why .why-title-des{
+
+    .why .why-title-des {
         margin-bottom: 0;
     }
 }
